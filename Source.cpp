@@ -59,7 +59,7 @@ public:
 	}
 };
 
-int Player::amountOfPlayer; //<- static member of class declared here
+int Player::amountOfPlayer;
 
 class Ball
 {
@@ -94,7 +94,7 @@ public:
 		slSetForeColor(1, 1, 1, 1);
 		streamScore << score1 << " - " << score2;
 		slText(WINDOW_W / 2, WINDOW_H / 2, streamScore.str().c_str());
-		streamScore.str(""); // <- it cleans the buffer
+		streamScore.str("");
 	}
 	void restartBall()
 	{
